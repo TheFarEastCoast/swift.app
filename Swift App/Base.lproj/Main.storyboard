@@ -34,19 +34,32 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chJ-QV-KlJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fB9-NT-HDh">
-                                <rect key="frame" x="148" y="191" width="79" height="30"/>
-                                <state key="normal" title="PUSH ME 2"/>
-                                <connections>
-                                    <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6T-oP-D4V"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijm-ds-DF9">
+                                <rect key="frame" x="137.5" y="191" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="wXJ-hf-34q"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJ1-ya-9hf">
+                                <rect key="frame" x="137.5" y="271" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="kZk-yb-JSd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dJ1-ya-9hf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="85v-QY-JdC"/>
                             <constraint firstItem="tcd-cq-e19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9vz-RU-h78"/>
-                            <constraint firstItem="fB9-NT-HDh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UMw-s2-JEo"/>
-                            <constraint firstItem="fB9-NT-HDh" firstAttribute="top" secondItem="Epc-n1-sir" secondAttribute="bottom" constant="50" id="mFt-iC-K4w"/>
+                            <constraint firstItem="ijm-ds-DF9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DqX-wA-J4c"/>
+                            <constraint firstItem="ijm-ds-DF9" firstAttribute="top" secondItem="Epc-n1-sir" secondAttribute="bottom" constant="50" id="M3w-sL-XKV"/>
+                            <constraint firstItem="dJ1-ya-9hf" firstAttribute="top" secondItem="ijm-ds-DF9" secondAttribute="bottom" constant="50" id="dRI-aM-hd3"/>
                             <constraint firstItem="Epc-n1-sir" firstAttribute="top" secondItem="tcd-cq-e19" secondAttribute="bottom" constant="20" id="qdV-S4-wE4"/>
                             <constraint firstItem="Epc-n1-sir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcH-sy-hyM"/>
                             <constraint firstItem="tcd-cq-e19" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="wAw-W3-pAz"/>
@@ -54,6 +67,8 @@
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="tcd-cq-e19" id="9jj-11-84C"/>
+                        <outlet property="text1" destination="ijm-ds-DF9" id="4IF-jX-7hC"/>
+                        <outlet property="text2" destination="dJ1-ya-9hf" id="zL0-51-jqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
