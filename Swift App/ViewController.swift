@@ -15,14 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var text1: UITextField!
     @IBOutlet weak var text2: UITextField!
     
-    @IBOutlet weak var OperationLabel: UIButton!
-    @IBAction func ChangeOp(_ sender: Any) {
-        
-    }
     
     
     @IBAction func buttonTapped(_ sender: Any) {
-        var addition = true
+        var addition = true
         
         if addition {
             coolLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
