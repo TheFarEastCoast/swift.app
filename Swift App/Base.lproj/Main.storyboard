@@ -52,6 +52,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wr-mO-Eye">
+                                <rect key="frame" x="159.5" y="151" width="57" height="30"/>
+                                <state key="normal" title="Addition"/>
+                                <connections>
+                                    <action selector="ChangeOp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JL1-kL-uuu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -59,6 +66,8 @@
                             <constraint firstItem="tcd-cq-e19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9vz-RU-h78"/>
                             <constraint firstItem="ijm-ds-DF9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DqX-wA-J4c"/>
                             <constraint firstItem="ijm-ds-DF9" firstAttribute="top" secondItem="Epc-n1-sir" secondAttribute="bottom" constant="50" id="M3w-sL-XKV"/>
+                            <constraint firstItem="4wr-mO-Eye" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PWL-Ht-Eft"/>
+                            <constraint firstItem="4wr-mO-Eye" firstAttribute="top" secondItem="Epc-n1-sir" secondAttribute="bottom" constant="10" id="YQf-dp-rKz"/>
                             <constraint firstItem="dJ1-ya-9hf" firstAttribute="top" secondItem="ijm-ds-DF9" secondAttribute="bottom" constant="50" id="dRI-aM-hd3"/>
                             <constraint firstItem="Epc-n1-sir" firstAttribute="top" secondItem="tcd-cq-e19" secondAttribute="bottom" constant="20" id="qdV-S4-wE4"/>
                             <constraint firstItem="Epc-n1-sir" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rcH-sy-hyM"/>
@@ -66,6 +75,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="OperationLabel" destination="4wr-mO-Eye" id="HEe-dN-P0c"/>
                         <outlet property="coolLabel" destination="tcd-cq-e19" id="9jj-11-84C"/>
                         <outlet property="text1" destination="ijm-ds-DF9" id="4IF-jX-7hC"/>
                         <outlet property="text2" destination="dJ1-ya-9hf" id="zL0-51-jqf"/>
